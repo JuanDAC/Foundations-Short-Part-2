@@ -4,3 +4,5 @@ def obtener_coordenadas():
     return x, y
 
 coordenadas = obtener_coordenadas()
+
+coordenadas
