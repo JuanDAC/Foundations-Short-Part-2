@@ -15,24 +15,24 @@ def busqueda_lineal(tupla: Tuple[Union[int, str]], objetivo: Union[int, str]) ->
     pass
 
 # Ejemplo de uso
-datos = (5, 1, 8, 3, 2)
-indice = busqueda_lineal(datos, 3)
+datos: Tuple[int] = (5, 1, 8, 3, 2)
+indice: int = busqueda_lineal(datos, 3)
 print(f"El valor 3 se encontró en el índice {indice}.")
 
 # Ejemplo de uso 1: Elemento encontrado
-datos = (5, 1, 8, 3, 2)
-indice = busqueda_lineal(datos, 3)
+datos: Tuple[int] = (5, 1, 8, 3, 2)
+indice: int = busqueda_lineal(datos, 3)
 print(f"El valor 3 se encontró en el índice {indice}.")
 # Salida esperada: "El valor 3 se encontró en el índice 3."
 
 # Ejemplo de uso 2: Elemento no encontrado
-datos = (5, 1, 8, 3, 2)
-indice = busqueda_lineal(datos, 6)
+datos: Tuple[int] = (5, 1, 8, 3, 2)
+indice: int = busqueda_lineal(datos, 6)
 print(f"El valor 6 se encontró en el índice {indice}.")
 # Salida esperada: "El valor 6 se encontró en el índice -1."
 
 # Ejemplo de uso 3: Búsqueda en una tupla de cadenas
-nombres = ("Alice", "Bob", "Charlie", "David")
-indice = busqueda_lineal(nombres, "Charlie")
+nombres: Tuple[str] = ("Alice", "Bob", "Charlie", "David")
+indice: int = busqueda_lineal(nombres, "Charlie")
 print(f"El nombre 'Charlie' se encontró en el índice {indice}.")
 # Salida esperada: "El nombre 'Charlie' se encontró en el índice 2."

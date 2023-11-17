@@ -15,24 +15,24 @@ def busqueda_binaria(tupla: Tuple[Union[int, str]], objetivo: Union[int, str]) -
     pass
 
 # Ejemplo de uso
-datos = (1, 2, 3, 5, 8)
-indice = busqueda_binaria(datos, 5)
+datos: Tuple[int] = (1, 2, 3, 5, 8)
+indice: int = busqueda_binaria(datos, 5)
 print(f"El valor 5 se encontró en el índice {indice}.")
 
 # Ejemplo de uso 1: Elemento encontrado en una tupla ordenada
-datos = (1, 2, 3, 5, 8)
-indice = busqueda_binaria(datos, 5)
+datos: Tuple[int] = (1, 2, 3, 5, 8)
+indice: int = busqueda_binaria(datos, 5)
 print(f"El valor 5 se encontró en el índice {indice}.")
 # Salida esperada: "El valor 5 se encontró en el índice 3."
 
 # Ejemplo de uso 2: Elemento no encontrado en una tupla ordenada
-datos = (1, 2, 3, 5, 8)
-indice = busqueda_binaria(datos, 6)
+datos: Tuple[int] = (1, 2, 3, 5, 8)
+indice: int = busqueda_binaria(datos, 6)
 print(f"El valor 6 se encontró en el índice {indice}.")
 # Salida esperada: "El valor 6 se encontró en el índice -1."
 
 # Ejemplo de uso 3: Búsqueda en una tupla de cadenas ordenada alfabéticamente
-nombres = ("Alice", "Bob", "Charlie", "David", "Eva")
-indice = busqueda_binaria(nombres, "Eva")
+nombres: Tuple[str] = ("Alice", "Bob", "Charlie", "David", "Eva")
+indice: int = busqueda_binaria(nombres, "Eva")
 print(f"El nombre 'Eva' se encontró en el índice {indice}.")
 # Salida esperada: "El nombre 'Eva' se encontró en el índice 4."
